@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Site pour Bethsabée</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Coucou Bethsabée !!
+        </h1>
+        
+        <div class = "images">
+            <img src = "1.JPG" class = "image1" >
+            <img src = "3.JPG" class = "image1" >
+            <img src = "4.JPG" class = "image1" >
+            <img src = "5.JPG" class = "image1" >
+            <img src = "6.JPG" class = "image1" >
+            <img src = "7.JPG" class = "image1" >
+        </div>
+        
+        <p> Bienvenue sur cette petite page toute mignonne. J'espère quelle te plaira, même si ça n'est pas le site du turfu !</p>
+
+
+        <h2>Voici un générateur de qr code aléatoire
+    
+        </h2>
+        <div class = "boutonson"> 
+            <button onclick="Affiche()">CLIQUE ICI MON BB </button>
+        </div>
+
+        <p id="qrcode" class = "qrcode"></p>
+        <p id="ind"></p>
+        <script>
+            const images = [];
+            const ind = 10;
+
+            for (let i = 0; i<ind; i++)
+            {
+                images.push(`mon_qr_code${i}.jpg`);
+            }
+
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            function Affiche()
+            {
+                const index = getRandomInt(0, images.length);
+                document.getElementById("qrcode").innerHTML = `<img src="mon_qr_code${index}.jpg" alt="Qr code aléatoire dun son." width=200px>`;
+            }
+        </script>
+
+    </body>
+</html>
