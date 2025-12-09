@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    background-image: url(fond\ coeur.jpg);
+    background-size: cover;
+}
+
+h2{
+    text-align: center;
+}
+
+.images{
+    margin-left: 155px;
+    margin-right: 120px;
+}
+.image1{
+    width : 200px;
+    height : auto;
+}
+
+h1{
+    font-weight: 900;
+    font-family : Pacifico;
+    text-align : center;
+    color : black;
+}
+
+.boutonson
+{
+    text-align: center;
+}
+
+.qrcode
+{
+    text-align : center;
+}
+
+.para{
+    font-weight: 700;
+    font-family : Arial;
+}
